@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-<link href="https://fonts.googleapis.com/family=Lacquer|Roboto&display=swap" rel="stylesheet">
-<style>
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Semana 6</title>
+  </head>
 
+      <body>
+<center>
     <header>
-        <nav>
-            <ul>
-                <li>
-                  <a href="./index.html">
-                   Inicio</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/ty.guilherme">
-                    instagram </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/Gui_fiddy">
-                    Twitter</a>
-                </li>
-            </ul>
-        </nav>
+  <h1 style="color:blue;">Meu perfil</h1>
+  
     </header>
 
-<body>
- <center>
-  <h1>Guilherme Oliveira</h1>
-            <p>Oi me chamo Guilherme olivera atualmente estudando no curso superior de<br>
+  <h1 >Guilherme Oliveira</h1>
+            <p>Oi me chamo Guilherme oliveira atualmente estudando no curso superior de<br>
                 Tecnologia em Análise e Desenvolvimento de Sistemas - Campus Cajazeiras, <br>
-                tenho 22 anos pratico esportes como futebol e musculação,
-                meus estilos de musica preferidas sao eletronica e trap <br>
-                </p>
+                tenho 23 anos pratico esportes como futebol e musculação,
+                meus estilos de musica preferidas sao eletronica e trap. <br>
 
-                <p><a href="https://youtube.com/playlist?list=PLh2yPb6d1PSaz8_JJyAt0uSvdsO8WlO_q"> Aqui uma das minhas Playlists favoritas de Trap!</a ></p>
 
-                <p><a href="https://youtube.com/playlist?list=PL4C9F90A46845CCB1">Minha Playlist favorita de musica eletronica!</a ></p>
-</center>
-</body>
+                <div id="after_submit"></div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Seu nome:</label><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Seu email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Sua mensagem:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Envia" />
+</form>
+
+     </body>
+  
+  <footer style="color:blue;">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Todos os direitos resevados! </p>
+  </footer>
 </html>
